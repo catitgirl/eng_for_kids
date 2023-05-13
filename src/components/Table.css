@@ -1,0 +1,81 @@
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  position: relative;
+}
+
+td:hover .actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.actions {
+  display: none;
+  position: absolute;
+  top: 0.2rem;
+}
+
+input[type="text"],
+button {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.edit-button,
+.delete-button,
+.add-button {
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+.edit-button {
+  background-color: #4caf50;
+  width: 100px;
+}
+
+.delete-button {
+  background-color: #e9203a;
+  width: 100px;
+}
+
+.add-button {
+  background-color: #eef123;
+  width: 200px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #5660ee;
+}
+
+.add-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}

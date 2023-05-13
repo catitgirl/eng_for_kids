@@ -1,0 +1,82 @@
+[
+  {
+    "word": "apple",
+    "translation": "яблоко",
+    "image": "https://cdn-icons-png.flaticon.com/512/1791/1791336.png"
+  },
+  {
+    "word": "banana",
+    "translation": "банан",
+    "image": "https://cdn-icons-png.flaticon.com/512/889/889676.png"
+  },
+  {
+    "word": "orange",
+    "translation": "апельсин",
+    "image": "https://cdn-icons-png.flaticon.com/512/415/415734.png"
+  },
+  {
+    "word": "kiwi",
+    "translation": "киви",
+    "image": "https://cdn-icons-png.flaticon.com/512/4031/4031094.png"
+  },
+  {
+    "word": "mango",
+    "translation": "манго",
+    "image": "https://cdn-icons-png.flaticon.com/128/6866/6866538.png"
+  },
+  {
+    "word": "pineapple",
+    "translation": "ананас",
+    "image": "https://cdn-icons-png.flaticon.com/128/1880/1880277.png"
+  },
+  {
+    "word": "watermelon",
+    "translation": "арбуз",
+    "image": "https://cdn-icons-png.flaticon.com/128/5582/5582664.png"
+  },
+  {
+    "word": "peach",
+    "translation": "персик",
+    "image": "https://cdn-icons-png.flaticon.com/128/6866/6866552.png"
+  },
+  {
+    "word": "pear",
+    "translation": "груша",
+    "image": "https://cdn-icons-png.flaticon.com/128/1791/1791335.png"
+  },
+  {
+    "word": "grape",
+    "translation": "виноград",
+    "image": "https://cdn-icons-png.flaticon.com/128/5376/5376074.png"
+  },
+  {
+    "word": "strawberry",
+    "translation": "клубника",
+    "image": "https://cdn-icons-png.flaticon.com/128/7315/7315465.png"
+  },
+  {
+    "word": "raspberry",
+    "translation": "малина",
+    "image": "https://cdn-icons-png.flaticon.com/128/6866/6866609.png"
+  },
+  {
+    "word": "blueberry",
+    "translation": "черника",
+    "image": "https://cdn-icons-png.flaticon.com/128/1791/1791354.png"
+  },
+  {
+    "word": "cherry",
+    "translation": "вишня",
+    "image": "https://cdn-icons-png.flaticon.com/128/1791/1791306.png"
+  },
+  {
+    "word": "plum",
+    "translation": "слива",
+    "image": "https://cdn-icons-png.flaticon.com/128/1791/1791366.png"
+  },
+  {
+    "word": "apricot",
+    "translation": "абрикос",
+    "image": "https://cdn-icons-png.flaticon.com/128/1135/1135558.png"
+  }
+]

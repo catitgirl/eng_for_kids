@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.example-image {
+  margin-top: 90px;
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+.mainDescr {
+  text-align: start;
+}
