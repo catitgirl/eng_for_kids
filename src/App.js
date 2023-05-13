@@ -16,7 +16,7 @@ class App extends React.Component {
           <div className="App-structure">
             <Header />
             <Routes>
-              <Route path="/" element={<Main />} />
+              <Route path="/" element={<Main />} index />
               <Route path="/table" element={<Table />} />
               <Route path="/lettercards" element={<LetterCards />} />
               <Route path="/game" element={<Game />} />
