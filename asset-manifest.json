@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/languagecards/static/css/main.e943338c.css",
-    "main.js": "/languagecards/static/js/main.4be698c2.js",
-    "static/js/787.c59d48ff.chunk.js": "/languagecards/static/js/787.c59d48ff.chunk.js",
-    "static/media/children2.jpg": "/languagecards/static/media/children2.2df4c295bd7cfd02465b.jpg",
-    "index.html": "/languagecards/index.html",
-    "main.e943338c.css.map": "/languagecards/static/css/main.e943338c.css.map",
-    "main.4be698c2.js.map": "/languagecards/static/js/main.4be698c2.js.map",
-    "787.c59d48ff.chunk.js.map": "/languagecards/static/js/787.c59d48ff.chunk.js.map"
+    "main.css": "/eng_for_kids/static/css/main.e943338c.css",
+    "main.js": "/eng_for_kids/static/js/main.dda4d4ab.js",
+    "static/js/787.c59d48ff.chunk.js": "/eng_for_kids/static/js/787.c59d48ff.chunk.js",
+    "static/media/children2.jpg": "/eng_for_kids/static/media/children2.2df4c295bd7cfd02465b.jpg",
+    "index.html": "/eng_for_kids/index.html",
+    "main.e943338c.css.map": "/eng_for_kids/static/css/main.e943338c.css.map",
+    "main.dda4d4ab.js.map": "/eng_for_kids/static/js/main.dda4d4ab.js.map",
+    "787.c59d48ff.chunk.js.map": "/eng_for_kids/static/js/787.c59d48ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e943338c.css",
-    "static/js/main.4be698c2.js"
+    "static/js/main.dda4d4ab.js"
   ]
 }
