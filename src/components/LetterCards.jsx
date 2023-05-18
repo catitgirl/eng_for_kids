@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./LetterCards.css";
 
 const letters = "abcdefghijklmnopqrstuvwxyz".split("");
@@ -7,23 +7,31 @@ const LetterCard = ({ letter }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  useEffect(() => {
-    const img = new Image();
-    img.src = `images/${letter}.png`;
-    img.onload = () => setImageLoaded(true);
-  }, [letter]);
-
   const handleCardClick = () => {
     setIsFlipped(true);
   };
 
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <div className="letter-card" onClick={handleCardClick}>
-      <img
-        className="letter-image"
-        src={imageLoaded ? `images/${letter}.png` : "images/back.jpg"}
-        alt={isFlipped ? letter : "back"}
-      />
+      <div className={`card-front ${isFlipped ? "hidden" : ""}`}>
+        <img
+          className="letter-image"
+          src={process.env.PUBLIC_URL + "/images/back.jpg"}
+          alt="back"
+        />
+      </div>
+      <div className={`card-back ${isFlipped ? "" : "hidden"}`}>
+        <img
+          className={`letter-image ${imageLoaded ? "" : "hidden"}`}
+          src={process.env.PUBLIC_URL + `/images/${letter}.png`}
+          alt={letter}
+          onLoad={handleImageLoad}
+        />
+      </div>
     </div>
   );
 };

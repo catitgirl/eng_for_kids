@@ -15,13 +15,17 @@ const Table = () => {
   const [editingId, setEditingId] = useState(null);
   const [newWord, setNewWord] = useState("");
   const [newTranslation, setNewTranslation] = useState("");
+  const [isEmptyField, setIsEmptyField] = useState(true);
 
   useEffect(() => {
     localStorage.setItem("data", JSON.stringify(data));
   }, [data]);
 
   const handleEdit = (id) => {
+    const itemToEdit = data.find((item) => item.id === id);
     setEditingId(id);
+    setNewWord(itemToEdit.word);
+    setNewTranslation(itemToEdit.translation);
   };
 
   const handleSave = (id) => {
@@ -57,6 +61,19 @@ const Table = () => {
     }
   };
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    if (name === "word") {
+      setNewWord(value);
+    } else if (name === "translation") {
+      setNewTranslation(value);
+    }
+  };
+
+  useEffect(() => {
+    setIsEmptyField(!newWord || !newTranslation);
+  }, [newWord, newTranslation]);
+
   return (
     <div>
       <table>
@@ -74,8 +91,10 @@ const Table = () => {
                 {editingId === item.id ? (
                   <input
                     type="text"
-                    defaultValue={item.word}
-                    onChange={(e) => setNewWord(e.target.value)}
+                    name="word"
+                    value={newWord}
+                    onChange={handleInputChange}
+                    className={!newWord ? "empty-field" : ""}
                   />
                 ) : (
                   item.word
@@ -85,8 +104,10 @@ const Table = () => {
                 {editingId === item.id ? (
                   <input
                     type="text"
-                    defaultValue={item.translation}
-                    onChange={(e) => setNewTranslation(e.target.value)}
+                    name="translation"
+                    value={newTranslation}
+                    onChange={handleInputChange}
+                    className={!newTranslation ? "empty-field" : ""}
                   />
                 ) : (
                   item.translation
@@ -98,6 +119,7 @@ const Table = () => {
                     <button
                       className="save-button"
                       onClick={() => handleSave(item.id)}
+                      disabled={isEmptyField}
                     >
                       Save
                     </button>
@@ -136,17 +158,25 @@ const Table = () => {
       <div className="add-button-container">
         <input
           type="text"
+          name="word"
           placeholder="Word"
           value={newWord}
-          onChange={(e) => setNewWord(e.target.value)}
+          onChange={handleInputChange}
+          className={!newWord ? "empty-field" : ""}
         />
         <input
           type="text"
+          name="translation"
           placeholder="Translation"
           value={newTranslation}
-          onChange={(e) => setNewTranslation(e.target.value)}
+          onChange={handleInputChange}
+          className={!newTranslation ? "empty-field" : ""}
         />
-        <button className="add-button" onClick={handleAdd}>
+        <button
+          className="add-button"
+          onClick={handleAdd}
+          disabled={isEmptyField}
+        >
           Add
         </button>
       </div>
